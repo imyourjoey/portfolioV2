@@ -1,4 +1,5 @@
 <template>
+  <Nav></Nav>
   <div
     class="center-container md:flex md:items-center md:justify-center"
     style="min-height: 95vh"
@@ -61,4 +62,5 @@
 <script setup>
 import { NButton } from "naive-ui";
 import HalfBody from "@/assets/svg/Potrait/HalfBody.vue";
+import Nav from "@/components/Nav/Index.vue";
 </script>
