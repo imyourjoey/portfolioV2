@@ -13,11 +13,24 @@
 
   <n-drawer v-model:show="showDrawer" :width="250" placement="right">
     <n-drawer-content>
-      <div class="text-3xl font-bold">Home</div>
-      <div class="text-3xl font-bold mt-2">Projects</div>
-      <div class="text-3xl font-bold mt-2">Experiences</div>
-      <div class="text-3xl font-bold mt-2">Education</div>
-      <div class="text-3xl font-bold mt-2">Resume</div>
+      <div
+        class="text-3xl font-bold cursor-pointer hover:text-primary"
+        @click="navigateTo('/')"
+      >
+        Home
+      </div>
+      <div class="text-3xl font-bold mt-2 cursor-pointer hover:text-primary">
+        Projects
+      </div>
+      <div class="text-3xl font-bold mt-2 cursor-pointer hover:text-primary">
+        Experiences
+      </div>
+      <div class="text-3xl font-bold mt-2 cursor-pointer hover:text-primary">
+        Education
+      </div>
+      <div class="text-3xl font-bold mt-2 cursor-pointer hover:text-primary">
+        Resume
+      </div>
     </n-drawer-content>
   </n-drawer>
 </template>
@@ -27,6 +40,8 @@ import IconSideBar from "@/icons/IconSideBar.vue";
 import { NPopover, NDrawer, NDrawerContent } from "naive-ui";
 import { ref, onMounted } from "vue";
 import Cookies from "js-cookie";
+import useRouterUtil from "@/utils/routerUtil.js";
+const { navigateTo } = useRouterUtil();
 
 const showPopover = ref(false);
 const showDrawer = ref(false);
