@@ -25,7 +25,10 @@
       <div class="text-3xl font-bold mt-2 cursor-pointer hover:text-primary">
         Experiences
       </div>
-      <div class="text-3xl font-bold mt-2 cursor-pointer hover:text-primary">
+      <div
+        class="text-3xl font-bold mt-2 cursor-pointer hover:text-primary"
+        @click="navigateTo('/edu')"
+      >
         Education
       </div>
       <div class="text-3xl font-bold mt-2 cursor-pointer hover:text-primary">
