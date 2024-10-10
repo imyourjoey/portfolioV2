@@ -1,5 +1,7 @@
 <template>
-  <div class="center-container relative md:card md:shadow-lg md:mt-8">
+  <div
+    class="center-container relative md:card md:shadow-lg md:mt-8 px-5 md:px-4"
+  >
     <div class="text-3xl font-bold mb-6">My Education</div>
 
     <n-timeline :icon-size="iconSize" class="z-10">
@@ -14,13 +16,13 @@
           Bachelor of Computer Science with Honours in Network Engineering
         </div>
         <ul class="md:list-disc list-inside">
-          <li class="mt-4 text-lg">
+          <li class="mt-4 text-lg leading-tight">
             CGPA: 3.94/4.00 (Highest in Cohort, Year 2020)
           </li>
-          <li class="mt-4 text-lg">
+          <li class="mt-4 text-lg leading-tight">
             Kuok Foundation Scholar (RM21,000 Grant Scholarship)
           </li>
-          <li class="mt-4 mb-4 text-lg">
+          <li class="mt-4 mb-4 text-lg leading-tight">
             SabahNet Fortinet Security Fabric Range Challenge 2023 (3rd Place -
             RM2,000 Prize Winner)
           </li>
@@ -39,11 +41,13 @@
         </div>
         <div>
           <ul class="md:list-disc list-inside">
-            <li class="mt-4 text-lg">
+            <li class="mt-4 text-lg leading-tight">
               Full Science Stream - Physics, Chemistry, Mathematics(T)
             </li>
-            <li class="mt-4 text-lg">Academic Bureau, Student's Council</li>
-            <li class="mt-4 mb-4 text-lg">
+            <li class="mt-4 text-lg leading-tight">
+              Academic Bureau, Student's Council
+            </li>
+            <li class="mt-4 mb-4 text-lg leading-tight">
               Vice President, St. Paul Boy Scouts
             </li>
           </ul>

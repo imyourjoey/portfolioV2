@@ -22,7 +22,10 @@
       <div class="text-3xl font-bold mt-2 cursor-pointer hover:text-primary">
         Projects
       </div>
-      <div class="text-3xl font-bold mt-2 cursor-pointer hover:text-primary">
+      <div
+        class="text-3xl font-bold mt-2 cursor-pointer hover:text-primary"
+        @click="navigateTo('/experience')"
+      >
         Experiences
       </div>
       <div
@@ -31,8 +34,13 @@
       >
         Education
       </div>
-      <div class="text-3xl font-bold mt-2 cursor-pointer hover:text-primary">
-        Resume
+      <div class="text-3xl mt-2 cursor-pointer hover:text-primary">
+        <a
+          class="font-bold"
+          href="https://drive.google.com/file/d/1qX5KCrARB2RPCJ062JVM8fchuoZBcqVU/view?usp=sharing"
+          target="_blank"
+          >Resume</a
+        >
       </div>
     </n-drawer-content>
   </n-drawer>
