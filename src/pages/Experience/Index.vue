@@ -1,5 +1,5 @@
 <template>
-  <div class="center-container px-5 md:px-4 relative">
+  <div class="center-container px-5 md:px-0 relative">
     <div class="text-3xl font-bold">My Experiences</div>
     <div class="mb-6 mt-1.5">
       A summary of the roles and accomplishments, that have shaped my

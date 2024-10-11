@@ -1,5 +1,4 @@
 <template>
-  <Nav></Nav>
   <div
     class="center-container md:flex md:items-center md:justify-center"
     style="min-height: 95vh"
@@ -41,8 +40,7 @@
             </div>
             <div class="text-base md:text-lg font-semibold mt-1">Backend</div>
             <div class="text-sm md:text-base md:font-light mt-1">
-              Rails, Laravel
-              <span class="hidden md:inline md:font-light"
+              Rails, Laravel<span class="hidden md:inline md:font-light"
                 >, GraphQL, REST APIs</span
               >
             </div>
@@ -57,10 +55,10 @@
       </div>
     </div>
   </div>
+  <Nav></Nav>
 </template>
 
 <script setup>
-import { NButton } from "naive-ui";
 import HalfBody from "@/assets/svg/Potrait/HalfBody.vue";
 import Nav from "@/components/Nav/Index.vue";
 </script>

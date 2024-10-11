@@ -3,9 +3,9 @@
     <template #trigger>
       <IconSideBar
         @click="showDrawer = true"
-        class="absolute right-4 top-4 cursor-pointer hover:scale-110"
-        width="35"
-        height="35"
+        class="absolute right-3 top-3 cursor-pointer hover:scale-110"
+        width="30"
+        height="30"
       />
     </template>
     <span>Click Here to Learn More About Me!</span>
@@ -15,22 +15,37 @@
     <n-drawer-content>
       <div
         class="text-3xl font-bold cursor-pointer hover:text-primary"
-        @click="navigateTo('/')"
+        @click="
+          navigateTo('/');
+          showDrawer = false;
+        "
       >
         Home
       </div>
-      <div class="text-3xl font-bold mt-2 cursor-pointer hover:text-primary">
+      <div
+        class="text-3xl font-bold mt-2 cursor-pointer hover:text-primary"
+        @click="
+          navigateTo('/project');
+          showDrawer = false;
+        "
+      >
         Projects
       </div>
       <div
         class="text-3xl font-bold mt-2 cursor-pointer hover:text-primary"
-        @click="navigateTo('/experience')"
+        @click="
+          navigateTo('/experience');
+          showDrawer = false;
+        "
       >
         Experiences
       </div>
       <div
         class="text-3xl font-bold mt-2 cursor-pointer hover:text-primary"
-        @click="navigateTo('/edu')"
+        @click="
+          navigateTo('/edu');
+          showDrawer = false;
+        "
       >
         Education
       </div>
